@@ -2,3 +2,5 @@
 <p>
   <%= @pet.name %> lost <%= @pet.lost_days_ago %> days ago in <%= @pet.address %>, it's a <%= @pet.species %>.
 </p>
+
+<%= link_to "Delete pet", pet_path(@pet), method: :delete, data: { confirm: "Are you sure you found it?"} %>
